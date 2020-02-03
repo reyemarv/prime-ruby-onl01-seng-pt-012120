@@ -1,8 +1,6 @@
-def prime?(integer)
-    i = 2
-    while i <= integer
-        return false if integer % i == 0 && integer < 1
-        i += 1
-    end
-    true
+def prime?(number)
+(1...100).each do |num|
+  if (1..num).select { |d| num % d == 0 } == [1, num]
+    prime_array.push(num)
+  end
 end
