@@ -1,3 +1,4 @@
 def prime?(number)
+  
 
 end 
